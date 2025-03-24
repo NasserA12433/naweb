@@ -8,11 +8,6 @@ function Home() {
   return (
     <div className="home-container">
       <h1>Welcome to My Website</h1>
-      <div className="button-container">
-        <Link to="/experiences" className="nav-button">Experiences</Link>
-        <Link to="/projects" className="nav-button">Projects</Link>
-        <Link to="/current-plans" className="nav-button">What I'm Working On</Link>
-      </div>
     </div>
   );
 }
