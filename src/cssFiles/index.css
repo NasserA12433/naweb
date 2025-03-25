@@ -5,21 +5,14 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #353434;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  justify-content: center;
+  display:flex;
 }
 
 body {
@@ -30,9 +23,28 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+
+/*---------------------------
+  This whole body below is css styling for an on hover i decided to move to home
+  Erase once done with site
+  thank you
+---------------*/
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color:white;
+  display:flex;
+  place-items: center;
 }
 
 button {
@@ -65,4 +77,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -1,8 +1,8 @@
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./cssFiles/home.css";
 import CurrentPlans from "./currentplans.tsx";
 import CurrentProjects from "./currentprojects.tsx";
 import Experience from "./experience.tsx";
-import "./home.css";
 
 function Home() {
   return (
