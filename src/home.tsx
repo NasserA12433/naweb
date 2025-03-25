@@ -14,46 +14,42 @@ function Home() {
 }
 
 function App() {
-useEffect(() => {
-  const margin = 50;
-  const handleMouseMove = (e: MouseEvent) => {
-    const { innerWidth, innerHeight } = window;
+  useEffect(() => {
+    const margin= 50;
+    const handleMouseMove = (e: MouseEvent) => {
 
-    // Restrict effect to screen margin
-    if (
-      e.clientX < margin ||
-      e.clientX > innerWidth - margin ||
-      e.clientY < margin ||
-      e.clientY > innerHeight - margin
-    ) {
-      return;
-    }
+      const {innerWidth, innerHeight}=window;
+      if(
+        e.clientX<margin ||
+        e.clientX>innerWidth-margin||
+        e.clientY<margin||
+        e.clientY>innerHeight-margin
+      ){
+        return;
+      }
+      if (e.target instanceof HTMLElement && e.target.closest(".nav-button")) {
+        return; // Ignore buttons
+      }
 
-    // Avoid effect on navigation buttons
-    if (e.target instanceof HTMLElement && e.target.closest(".nav-button")) {
-      return;
-    }
+      const trail = document.createElement("div");
+      trail.className = "trail";
+      document.body.appendChild(trail);
 
-    const trail = document.createElement("div");
-    trail.className = "trail";
-    document.body.appendChild(trail);
+    //   // Set position at cursor
+    //   requestAnimationFrame(() =>{
+    //   trail.style.left = `${e.clientX}px`;
+    //   trail.style.top = `${e.clientY}px`;
+    // });
+      // Remove after fading effect
+      setTimeout(() => {
+        trail.remove();
+      }, 500);
+    };
 
-    // Ensure the element is added before measuring
-    requestAnimationFrame(() => {
-      const size = 10; // Ensuring a fixed size
-      trail.style.left = `${e.clientX - size / 2}px`;
-      trail.style.top = `${e.clientY - size / 2}px`;
-    });
-
-    // Remove the trail after fading
-    setTimeout(() => {
-      trail.remove();
-    }, 500);
-  };
-
-  document.addEventListener("mousemove", handleMouseMove);
-  return () => document.removeEventListener("mousemove", handleMouseMove);
-}, []);
+    // Attach the event listener
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => document.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
     <Router>
