@@ -3,6 +3,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./cssFiles/home.css";
 import CurrentPlans from "./currentplans.tsx";
 import CurrentProjects from "./currentprojects.tsx";
+import useMousePosition from "./cursorlocator.tsx";
 import Experience from "./experience.tsx";
 
 function Home() {
@@ -14,10 +15,12 @@ function Home() {
 }
 
 function App() {
+  const {x,y}= useMousePosition();
+
   useEffect(() => {
     const margin= 50;
-    const handleMouseMove = (e: MouseEvent) => {
 
+    const handleMouseMove = (e: MouseEvent) => {
       const {innerWidth, innerHeight}=window;
       if(
         e.clientX<margin ||
@@ -35,11 +38,11 @@ function App() {
       trail.className = "trail";
       document.body.appendChild(trail);
 
-    //   // Set position at cursor
-    //   requestAnimationFrame(() =>{
-    //   trail.style.left = `${e.clientX}px`;
-    //   trail.style.top = `${e.clientY}px`;
-    // });
+      // Set position at cursor
+      requestAnimationFrame(() =>{
+      trail.style.left = `${x-5}px`;
+      trail.style.top = `${y-5}px`;
+    });
       // Remove after fading effect
       setTimeout(() => {
         trail.remove();

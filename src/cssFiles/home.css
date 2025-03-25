@@ -37,7 +37,7 @@ h1{
   color:white;
 }
 .trail {
-  position: fixed; /* Ensures effect follows cursor correctly */
+  position: fixed;/* Ensures effect follows cursor correctly */
   width: 10px;
   height: 10px;
   background: repeating-linear-gradient(
