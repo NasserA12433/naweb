@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./cssFiles/home.css";
 import CurrentPlans from "./currentplans.tsx";
@@ -14,42 +13,6 @@ function Home() {
 }
 
 function App() {
-  useEffect(() => {
-    const margin= 50;
-    const handleMouseMove = (e: MouseEvent) => {
-
-      const {innerWidth, innerHeight}=window;
-      if(
-        e.clientX<margin ||
-        e.clientX>innerWidth-margin||
-        e.clientY<margin||
-        e.clientY>innerHeight-margin
-      ){
-        return;
-      }
-      if (e.target instanceof HTMLElement && e.target.closest(".nav-button")) {
-        return; // Ignore buttons
-      }
-
-      const trail = document.createElement("div");
-      trail.className = "trail";
-      document.body.appendChild(trail);
-
-    //   // Set position at cursor
-    //   requestAnimationFrame(() =>{
-    //   trail.style.left = `${e.clientX}px`;
-    //   trail.style.top = `${e.clientY}px`;
-    // });
-      // Remove after fading effect
-      setTimeout(() => {
-        trail.remove();
-      }, 500);
-    };
-
-    // Attach the event listener
-    document.addEventListener("mousemove", handleMouseMove);
-    return () => document.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   return (
     <Router>

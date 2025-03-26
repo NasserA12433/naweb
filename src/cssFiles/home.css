@@ -12,6 +12,8 @@
 }
 
 .navbar {
+  position:sticky;
+  top:0;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -35,32 +37,4 @@
 
 h1{
   color:white;
-}
-.trail {
-  position: fixed; /* Ensures effect follows cursor correctly */
-  width: 10px;
-  height: 10px;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255, 0, 0, 0.8) 0px,
-    rgba(255, 0, 0, 0.8) 5px,
-    rgba(0, 255, 0, 0.8) 5px,
-    rgba(0, 255, 0, 0.8) 10px,
-    rgba(0, 0, 255, 0.8) 10px,
-    rgba(0, 0, 255, 0.8) 15px
-  ); /* Pixelated color effect */
-  image-rendering: pixelated;
-  pointer-events: none;
-  animation: fadeOut 0.5s ease-out forwards;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: scale(1.2);
-  }
 }
