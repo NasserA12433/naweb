@@ -1,0 +1,28 @@
+.trail-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.trail-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 162, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    filter: blur(2px);
+}
+
+/* Example: Add to buttons or elements you want to disable the trail on */
+.no-trail {
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
