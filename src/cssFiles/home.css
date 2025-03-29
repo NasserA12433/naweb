@@ -57,6 +57,38 @@ p{
   transition: opacity 1s ease-in-out;
 }
 
+.resume-button {
+    color: white;
+    border: black;
+    padding: 6px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.resume-button:hover {
+    background-color: #505050;
+    transform:scale(1.2)
+}
+
+.github-logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github-logo:hover {
+  transform: scale(1.2);
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @keyframes fadeIn {
   from {
