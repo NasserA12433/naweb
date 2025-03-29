@@ -13,8 +13,8 @@ function Home() {
         Nasser Alnabulsi
       </h1>
       <p>
-        <Typewriter text="Software Devloper " speed={100}/>
-        <FontAwesomeIcon icon={faLocationPin} size="2x" color="red"/>
+        <Typewriter text="Software Devloper" speed={100}/>
+        <FontAwesomeIcon icon={faLocationPin} color="red"/>
         {" "}La Verne California
         <br/>
         Learning and growing one line of code at a time
