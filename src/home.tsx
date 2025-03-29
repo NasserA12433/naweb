@@ -1,36 +1,27 @@
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./cssFiles/home.css";
-import CurrentPlans from "./currentplans.tsx";
-import CurrentProjects from "./currentprojects.tsx";
-import Experience from "./experience.tsx";
+
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Typewriter from "./typewriter.tsx";
 
 function Home() {
   return (
+
     <div className="home-container">
-      <h1>Welcome to My Website</h1>
+      <img src="src\assets\Profile.png"/>
+      <h1>
+        Nasser Alnabulsi
+      </h1>
+      <p>
+        <Typewriter text="Software Devloper" speed={100}/>
+        <FontAwesomeIcon icon={faLocationPin} color="red"/>
+        {" "}La Verne California
+        <br/>
+        Learning and growing one line of code at a time
+        </p>
     </div>
   );
 }
 
-function App() {
+export default Home;
 
-  return (
-    <Router>
-      <nav className="navbar">
-        <Link to="/" className="nav-button">Home</Link>
-        <Link to="/experiences" className="nav-button">Experiences</Link>
-        <Link to="/projects" className="nav-button">Projects</Link>
-        <Link to="/current-plans" className="nav-button">What I'm Working On</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/experiences" element={<Experience />} />
-        <Route path="/projects" element={<CurrentProjects />} />
-        <Route path="/current-plans" element={<CurrentPlans />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
