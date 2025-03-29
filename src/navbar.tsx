@@ -3,8 +3,9 @@ import './cssFiles/home.css';
 import CurrentProjects from "./currentprojects.tsx";
 import Experience from "./experience.tsx";
 import './home.tsx';
+import Home from "./home.tsx";
 
-function App() {
+function Navbar() {
 
     return (
     <Router>
@@ -22,4 +23,4 @@ function App() {
     </Router>
     );
 }
-export default App;
+export default Navbar;
