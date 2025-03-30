@@ -9,6 +9,17 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-photo{
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
 }
 
 .navbar {
@@ -84,11 +95,25 @@ p{
   transform: scale(1.2);
 }
 
-.button-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.linkedin-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
 }
+
+.linkedin-logo:hover {
+  transform: scale(1.2);
+}
+.face-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.face-logo:hover {
+  transform: scale(100.2);
+}
+
 
 @keyframes fadeIn {
   from {

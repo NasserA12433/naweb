@@ -11,8 +11,10 @@ function Home() {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 1 }}
 				>
-		<div className="home-container">
+		<div className="profile-photo">
 			<img src="src\assets\Profile.png"/>
+		</div>
+		<div className="home-container">
 			<h1>
 				Nasser Alnabulsi
 			</h1>
@@ -40,6 +42,20 @@ function Home() {
 						rel="noopener noreferrer">
 
 						<img src="src\assets\ghl2.png" className="github-logo"/>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/nasser-alnabulsi/"
+						target="_blank"
+						rel="noopener noreferrer">
+						
+						<img src="src\assets\linkedin.png" className="linkedin-logo"/>
+					</a>
+					<a
+						href="https://www.reddit.com/r/Invincible/comments/nmcxaq/i_couldnt_find_the_original_image_online_anywhere/"
+						target="_blank"
+						rel="noopener noreferrer">
+						
+						<img src="src\assets\Profile.png" className="face-logo"/>
 					</a>
 			</div>
 
