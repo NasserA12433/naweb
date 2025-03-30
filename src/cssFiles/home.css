@@ -69,7 +69,7 @@ p{
 }
 
 .resume-button {
-    color: white;
+    color: rgb(255, 255, 255);
     border: black;
     padding: 6px 5px;
     font-size: 16px;
@@ -77,11 +77,10 @@ p{
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
-
+    background-color: #000000;
 }
 
 .resume-button:hover {
-    background-color: #505050;
     transform:scale(1.2)
 }
 
@@ -111,17 +110,34 @@ p{
 }
 
 .face-logo:hover {
-  transform: scale(100.2);
+  transform: scale(10.2);
+}
+
+.resume-button .onhovertype {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display:inline-block;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.resume-button:hover .onhovertype {
+  opacity: 1;
+  width: 100%;
+  animation: tanimation .5s steps(30) 1 forwards;
+  font-size: small;
 }
 
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
+@keyframes tanimation {
+  0% {
+    width: 0;
     opacity: 1;
-    transform: translateY(0);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
   }
 }
+

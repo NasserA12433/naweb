@@ -32,8 +32,11 @@ function Home() {
 						href="src\assets\ResumeNasserAlnabulsi.pdf"
 						download="Nasser_Alnabulsi_Resume.pdf">
 						<button className="resume-button">
-						<FontAwesomeIcon icon={faFile} color="grey"/>
-						{" "}Resume
+						<FontAwesomeIcon icon={faFile} size="2x" color="white"/>
+						{" "}
+						<span className="onhovertype">
+						resume
+						</span>
 						</button>
 					</a>
 					<a
@@ -55,7 +58,7 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						
-						<img src="src\assets\Profile.png" className="face-logo"/>
+						<img src="src\assets\booty.webp" className="face-logo"/>
 					</a>
 			</div>
 
