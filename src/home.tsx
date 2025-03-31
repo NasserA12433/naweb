@@ -31,11 +31,11 @@ function Home() {
 					<a
 						href="src\assets\ResumeNasserAlnabulsi.pdf"
 						download="Nasser_Alnabulsi_Resume.pdf">
-						<button className="resume-button">
+						<button className="onhover-button">
 						<FontAwesomeIcon icon={faFile} size="2x" color="white"/>
 						{" "}
-						<span className="onhovertype">
-						resume
+						<span className="tooltip">
+						Resume
 						</span>
 						</button>
 					</a>
@@ -43,23 +43,25 @@ function Home() {
 						href="https://github.com/NasserA12433"
 						target="_blank"
 						rel="noopener noreferrer">
-
-						<img src="src\assets\ghl2.png" className="github-logo"/>
+						<button className="onhover-button">
+						<img src="src\assets\ghl2.png" className="linkedbutton-logo"/>
+						<span className="tooltip">
+							Github
+						</span>
+						</button>
 					</a>
 					<a
 						href="https://www.linkedin.com/in/nasser-alnabulsi/"
 						target="_blank"
 						rel="noopener noreferrer">
-						
-						<img src="src\assets\linkedin.png" className="linkedin-logo"/>
+						<button className="onhover-button">
+							<img src="src\assets\linkedin.png" className="linkedbutton-logo"/>
+							<span className="tooltip">
+								linkedin
+							</span>
+						</button>
 					</a>
-					<a
-						href="https://www.reddit.com/r/Invincible/comments/nmcxaq/i_couldnt_find_the_original_image_online_anywhere/"
-						target="_blank"
-						rel="noopener noreferrer">
-						
-						<img src="src\assets\booty.webp" className="face-logo"/>
-					</a>
+
 			</div>
 
 		</div>

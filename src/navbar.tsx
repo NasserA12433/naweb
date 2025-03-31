@@ -1,9 +1,9 @@
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import './cssFiles/home.css';
+import './cssFiles/navbar.css';
 import CurrentProjects from "./currentprojects.tsx";
 import Experience from "./experience.tsx";
-import './home.tsx';
 import Home from "./home.tsx";
+
 
 function Navbar() {
 

@@ -22,30 +22,6 @@
   justify-content: center;
 }
 
-.navbar {
-  position:sticky;
-  top:0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  background-color: #000000;
-  padding: 10px;
-}
-
-.nav-button {
-  padding: 10px 15px;
-  background-color: #000000;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.nav-button:hover {
-  background-color: rgb(175, 175, 175);
-  color:rgb(27, 27, 27);  
-}
-
 h1{
   color:white;
 }
@@ -68,7 +44,7 @@ p{
   transition: opacity 1s ease-in-out;
 }
 
-.resume-button {
+.onhover-button {
     color: rgb(255, 255, 255);
     border: black;
     padding: 6px 5px;
@@ -80,64 +56,41 @@ p{
     background-color: #000000;
 }
 
-.resume-button:hover {
+.onhover-button:hover {
     transform:scale(1.2)
 }
 
-.github-logo {
-  width: 50px;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-
-.github-logo:hover {
-  transform: scale(1.2);
-}
-
-.linkedin-logo {
+.linkedbutton-logo {
   width: 40px;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-.linkedin-logo:hover {
+.linkedbutton-logo:hover {
   transform: scale(1.2);
 }
-.face-logo {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
+
+.tooltip-containter{
+  position:relative;
+  display: inline-block;
 }
 
-.face-logo:hover {
-  transform: scale(10.2);
-}
-
-.resume-button .onhovertype {
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
+.tooltip {
+  position: absolute;
+  bottom: 120%; /* Adjusts the tooltip position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
   white-space: nowrap;
-  display:inline-block;
-  transition: opacity 0.3s ease, width 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
 }
 
-.resume-button:hover .onhovertype {
+.button-container:hover .tooltip {
   opacity: 1;
-  width: 100%;
-  animation: tanimation .5s steps(30) 1 forwards;
-  font-size: small;
-}
-
-
-@keyframes tanimation {
-  0% {
-    width: 0;
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
 }
 
