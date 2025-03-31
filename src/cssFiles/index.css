@@ -1,10 +1,17 @@
 :root {
+  --bg-color: #000000;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --button-bg: #000000;
+  --button-text: white;
+  --hover-bg: rgb(175, 175, 175);
+  --hover-text: rgb(0, 0, 0);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
 
   font-synthesis: none;
@@ -15,12 +22,24 @@
   display:flex;
 }
 
+.light-theme{
+  --bg-color:white;
+  --text-color:black;
+  --button-bg:white;
+  --button-text:black;
+  --hover-bg:rgb(203, 244, 247);
+  --hover-text:black;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  transition:background-color 0.3s, color 0.3s;
 }
 
 
