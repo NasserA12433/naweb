@@ -10,7 +10,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  place-content: center;
   color-scheme: light dark;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -37,7 +37,8 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  min-width: 100%;
   min-height: 100vh;
   background-color: var(--bg-color);
   color:var(--text-color);
