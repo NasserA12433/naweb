@@ -1,15 +1,12 @@
 import { faFile, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import githubLight from "../assets/ghd.jpg";
-import githubDark from "../assets/ghl.jpg";
 import "./cssFiles/home.css";
 import { useTheme } from "./ldtheme.tsx";
 import Typewriter from "./typewriter.tsx";
 
 function Home() {
 	const {isLightMode} = useTheme();
-	const imgSrc= isLightMode ? githubLight: githubDark;
 	return (
 			
 				<motion.div
@@ -50,9 +47,7 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						<button className="onhover-button">
-						<img
-							src={imgSrc}
-							className="assetbutton-logo"/>
+						{isLightMode? <img src="src\assets\ghd.jpg" className="assetbutton-logo"/>:<img src="src\assets\ghl.jpg" className="assetbutton-logo"/> }
 						<span className="tooltip">
 							Github
 						</span>
