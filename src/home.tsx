@@ -1,11 +1,17 @@
 import { faFile, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import githubLight from "../assets/ghd.jpg";
+import githubDark from "../assets/ghl.jpg";
 import "./cssFiles/home.css";
+import { useTheme } from "./ldtheme.tsx";
 import Typewriter from "./typewriter.tsx";
 
 function Home() {
+	const {isLightMode} = useTheme();
+	const imgSrc= isLightMode ? githubLight: githubDark;
 	return (
+			
 				<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -32,7 +38,7 @@ function Home() {
 						href="src\assets\ResumeNasserAlnabulsi.pdf"
 						download="Nasser_Alnabulsi_Resume.pdf">
 						<button className="onhover-button">
-						<FontAwesomeIcon icon={faFile} size="2x" color="white"/>
+						<FontAwesomeIcon icon={faFile} size="2x" color="icon"/>
 						{" "}
 						<span className="tooltip">
 						Resume
@@ -44,7 +50,9 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						<button className="onhover-button">
-						<img src="src\assets\ghl2.png" className="linkedbutton-logo"/>
+						<img
+							src={imgSrc}
+							className="assetbutton-logo"/>
 						<span className="tooltip">
 							Github
 						</span>
@@ -55,7 +63,7 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						<button className="onhover-button">
-							<img src="src\assets\linkedin.png" className="linkedbutton-logo"/>
+							<img src="src\assets\linkedin.png" className="assetbutton-logo"/>
 							<span className="tooltip">
 								linkedin
 							</span>

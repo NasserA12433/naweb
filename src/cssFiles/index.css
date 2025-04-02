@@ -5,14 +5,15 @@
   --button-text: white;
   --hover-bg: rgb(175, 175, 175);
   --hover-text: rgb(0, 0, 0);
+  --icon-color: white;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +24,7 @@
 }
 
 .light-theme{
+  --icon-color:black;
   --bg-color:white;
   --text-color:black;
   --button-bg:white;
