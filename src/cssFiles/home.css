@@ -46,14 +46,14 @@ p{
 
 .onhover-button {
     color: var(--text-color);
-    border: var(--bg-color);
+    border: var(--button-bg);
     padding: 6px 5px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
-    background-color: var(--bg-color);
+    background-color: var(--button-bg);
 }
 
 .onhover-button:hover {
@@ -97,5 +97,14 @@ p{
 
 .icon {
   color: var(--icon-color);
+  background-color: var(--bg-color);
   transition: color .3s ease-in-out;
+}
+
+
+.lightdark-logo{
+    width: 40px;
+    background-color:rgb(255, 255, 255,.6);
+    height: auto;
+    transition: transform 0.3s ease-in-out;
 }
