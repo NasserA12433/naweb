@@ -5,9 +5,9 @@ import { ThemeProvider } from './ldtheme.tsx';
 import Navbar from './navbar.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ThemeProvider>
-      <Navbar />
-    </ThemeProvider>
-  </StrictMode>,
+	<StrictMode>
+		<ThemeProvider>
+			<Navbar />
+		</ThemeProvider>
+	</StrictMode>,
 )

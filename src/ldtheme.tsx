@@ -14,6 +14,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.body.classList.toggle("light-theme", isLightMode);
+    document.body.classList.toggle("dark-theme", !isLightMode); // <-- This ensures dark mode applies
     localStorage.setItem("theme", isLightMode ? "light" : "dark");
   }, [isLightMode]);
 
