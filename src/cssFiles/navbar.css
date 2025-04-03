@@ -1,0 +1,39 @@
+.navbar {
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--bg-color);
+    padding: 10px;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--hover-bg);
+    color:rgb(27, 27, 27);  
+}
+
+
+.ldmode{
+    padding: 10px 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--bg-color);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.ldmode:hover{
+    background-color: var(--hover-bg);
+    color:rgb(27, 27, 27);  
+}

@@ -21,7 +21,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, speed = 50 }) => {
     return () => clearTimeout(timeoutId);
   }, [index, text, speed]);
 
-  return <p>{displayText}</p>;
+  return displayText;
 };
 
 export default Typewriter;
