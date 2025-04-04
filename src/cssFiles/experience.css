@@ -1,0 +1,38 @@
+/* experiences.css */
+.experience-description {
+    word-wrap: break-word; /* Allows long words to break and wrap within the container */
+    white-space: normal;   /* Ensures that the text wraps */
+    max-width: 100%;       /* Prevents overflow */
+    line-height: 1.5;      /* Adds spacing between lines for readability */
+    font-size: 14px;       /* Adjusts the font size if needed */
+    margin-bottom: 1rem;   /* Adds space between items */
+  }
+  
+.experience-box {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .experience-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  h2, h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
