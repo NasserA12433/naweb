@@ -25,10 +25,11 @@
   align-items: flex-start;
 }
 .job-logo {
-  width: 64px;
-  height: 64px;
+  width: 200px;
+  height: 200px;
   margin-right: 12px;
   object-fit:contain;
+  justify-content: center;
   display: flex;
 }
 .job-logo-wrapper{
