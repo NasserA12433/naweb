@@ -42,7 +42,9 @@
   background-repeat: no-repeat;
 }
 
-body {
+html, body {
+  height: 100%;
+  padding: 0;
   margin: 0;
   display: flex;
   place-items: center;
@@ -53,7 +55,7 @@ body {
   color:var(--text-color);
   transition:background-color 0.3s, color 0.3s;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
