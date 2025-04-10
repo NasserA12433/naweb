@@ -1,7 +1,6 @@
 .experience-container {
   height: 100vh; /* full screen height */
-  overflow-y: auto; /* enables vertical scroll */
-  padding: 1rem;
+  padding-top: 80px;
   scroll-behavior: smooth;
 
 }
@@ -9,7 +8,7 @@
 .experiencelist {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;  
+  gap: 1.5rem;
   overflow-y: auto; /* enables vertical scroll */
   scroll-behavior: smooth;
 }
@@ -87,3 +86,4 @@
   max-height: 200px;
   border-radius: 8px;
 }
+

@@ -11,6 +11,7 @@ interface JobPanelProps {
 	images?: string[];
 }
 
+
 const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, description,images }) => {
 	const [expanded, setExpanded] = useState(false);
 
@@ -80,7 +81,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 			animate={{ opacity: 1 }}
 			transition={{ duration: .5 }}
 			>
-				<div className="experience-containter">
+				<div className="experience-container">
 					<div className="experiencelist">
 						<JobPanel
 							title="Student Professional Worker"
@@ -113,6 +114,29 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 								"src/assets/Rover1.jpg",
 								"src/assets/Rover2.jpg",
 								"src/assets/Rover4.jpg",
+							]}
+						/>
+						<JobPanel
+							title="IT Technician"
+							company="Self Employed"
+							logo="src\assets\wag.gif"
+							skills={[" BIOS", "Hardware Replacement", "Buisness Managment"]}
+							description={[
+								"Worked for commission repairing multiple computer errors and user problems",
+								"Managed and maintained personal devices for fellow students",
+								"Reset and repaired computer batteries corrupt drive partitions, and did general maintenance on multiple private personal computers.",
+							]}
+
+						/>
+						<JobPanel
+							title="Project Manager"
+							company="Cal Poly Pomona"
+							logo="src\assets\housing.png"
+							skills={[" EC2 ", "JS", "SQL", "Flask"]}
+							description={[
+								"Manage and develop a housing finder application using AWS",
+								"Work with fellow students using the Agile development model to produce a product for use across the school",
+								"Guided my team in the development of web service endpoints, data storage development, and UI development, creating an application that shows the end user’s homes and rent data within a range of Cal Poly",
 
 							]}
 						/>
