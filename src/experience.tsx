@@ -140,6 +140,19 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 
 							]}
 						/>
+						<JobPanel
+							title="Intern"
+							company="OrangeGrid"
+							logo="src\assets\ogrid.png"
+							skills={[" Server Hardware ", "C#"]}
+							description={[
+								"Worked directly under the CIO to research servers for professional deployment",
+								"Learn about software deployment in the workplace",
+								"Attend meetings with clients and further expand knowledge on c# and website code",
+								"Learn more about software in a professional setting",
+
+							]}
+						/>
 					</div>
 				</div>
 		</motion.div>
