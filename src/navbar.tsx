@@ -6,7 +6,7 @@ import Home from "./home.tsx";
 import { useTheme } from "./ldtheme.tsx";
 
 function Navbar() {
-    const {isLightMode,toggleTheme}= useTheme();
+    const {toggleTheme}= useTheme();
     return (
     <Router>
         <nav className="navbar">
@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/experiences" className="nav-button">Experiences</Link>
         <Link to="/projects" className="nav-button">Projects</Link>
         <button onClick={toggleTheme} className="ldmode">
-            {isLightMode? "Dark Mode 🌚": "Light Mode ☀️"}
+            <img src="src\assets\ldicon.png" className="lightdark-logo"/>
         </button>
         </nav>
 

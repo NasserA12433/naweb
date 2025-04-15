@@ -1,0 +1,89 @@
+.experience-container {
+  height: 100vh; /* full screen height */
+  padding-top: 80px;
+  scroll-behavior: smooth;
+
+}
+
+.experiencelist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto; /* enables vertical scroll */
+  scroll-behavior: smooth;
+}
+
+.job-panel {
+  margin-top: 2rem;
+  display: flex;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+.job-logo {
+  width: 200px;
+  height: 200px;
+  margin-right: 12px;
+  object-fit:contain;
+  justify-content: center;
+  display: flex;
+}
+.job-logo-wrapper{
+  color: var(--text-color);
+
+}
+.job-position{
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.job-company{
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.job-details{
+  color: var(--text-color);
+
+}
+
+.learn-more-btn {
+  color:var(--text-color);
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #919191;
+}
+.skill-bubble {
+  display: inline-block;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.job-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.job-image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+}
+

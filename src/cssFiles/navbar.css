@@ -3,18 +3,25 @@
     top:0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     background-color: var(--bg-color);
     padding: 10px;
+    box-shadow: none;
 }
 
 .nav-button {
     padding: 10px 15px;
+    height: fit-content;
+    justify-content: center;
     background-color: var(--bg-color);
     color: var(--text-color);
     border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s ease;
+    box-shadow: none;
+    outline: none;
+    border: none;
 }
 
 .nav-button:hover {
@@ -31,9 +38,21 @@
     border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s ease;
+    box-shadow: none;
+    outline: none;
+    border: none;
 }
 
 .ldmode:hover{
+    box-shadow: none;
     background-color: var(--hover-bg);
     color:rgb(27, 27, 27);  
+}
+
+
+.lightdark-logo {
+    box-shadow: none;
+    width: 15px; 
+    height: 15px;
+    transition: transform 0.3s ease-in-out;
 }
