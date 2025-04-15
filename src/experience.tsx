@@ -32,6 +32,11 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						src={logo}
 						alt={`${company} logo`}
 						className="job-logo"
+						style={{
+							width: expanded ? "50px" : "200px",
+							height: expanded ? "200px" : "auto",
+							transition: "all 1.0s ease"
+						}}
 					/>
 				</div>
 				<div>
