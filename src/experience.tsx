@@ -34,7 +34,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						className="job-logo"
 						style={{
 							width: expanded ? "50px" : "200px",
-							height: expanded ? "200px" : "auto",
+							height: expanded ? "50px" : "200px",
 							transition: "all 1.0s ease"
 						}}
 					/>
