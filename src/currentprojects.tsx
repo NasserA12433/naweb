@@ -1,19 +1,20 @@
-import './cssFiles/Cube.css';
+import './cssFiles/cube.css';
+import Cube from './cube.tsx';
 
-
-function Cube() {
-    return (
-        <div className="cube-container">
-        <div className="cube">
-        <div className="face front">React</div>
-        <div className="face back">2</div>
-        <div className="face right">3</div>
-        <div className="face left">4</div>
-        <div className="face top">5</div>
-        <div className="face bottom">6</div>
-        </div>
-        </div>
-    );
+function CurrentProjects() {
+  return (
+    <div className="cube-stack">
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+      <Cube />
+    </div>
+  );
 }
 
-export default Cube;
+export default CurrentProjects;

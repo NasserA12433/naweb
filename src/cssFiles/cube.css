@@ -24,6 +24,8 @@
     font-size: 3em;
     text-align: center;
     line-height: 200px;
+    opacity: 1;
+    backface-visibility: hidden;
    }
    
    .front { transform: translateZ(100px); }
