@@ -3,16 +3,14 @@ import Cube from './cube.tsx';
 
 function CurrentProjects() {
   return (
-    <div className="cube-stack">
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
-      <Cube />
+    <div className='cpc'>
+      <div className="cube-stack">
+        <Cube frontFaceContent="React"/>
+        <Cube frontFaceContent="Typescript"/>
+        <Cube frontFaceContent="Flask"/>
+        <Cube frontFaceContent="Python"/>
+        <Cube frontFaceContent="SQL"/>
+        </div>
     </div>
   );
 }

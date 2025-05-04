@@ -1,7 +1,10 @@
+.cpc{
+    padding: 50px;
+}
 
 .cube-container {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     perspective: 900px;
 }
    
@@ -17,20 +20,20 @@
    
    .face {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background: rgba(56, 139, 247, 0.8);
-    border: 2px solid black;
-    font-size: 3em;
+    border: 1px solid black;
+    font-size: 1em;
     text-align: center;
-    line-height: 200px;
+    line-height: 100px;
     opacity: 1;
     backface-visibility: hidden;
    }
    
-   .front { transform: translateZ(100px); }
-   .back { transform: rotateY(180deg) translateZ(100px); }
-   .right { transform: rotateY(90deg) translateZ(100px); }
-   .left { transform: rotateY(-90deg) translateZ(100px); }
-   .top { transform: rotateX(90deg) translateZ(100px); }
-   .bottom { transform: rotateX(-90deg) translateZ(100px); }
+   .front { transform: translateZ(50px); }
+   .back { transform: rotateY(180deg) translateZ(50px); }
+   .right { transform: rotateY(90deg) translateZ(50px); }
+   .left { transform: rotateY(-90deg) translateZ(50px); }
+   .top { transform: rotateX(90deg) translateZ(50px); }
+   .bottom { transform: rotateX(-90deg) translateZ(50px); }
