@@ -1,6 +1,6 @@
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './cssFiles/navbar.css';
-import CurrentProjects from "./CurrentProjects.tsx";
+import CurrentProjects from "./currentprojects.tsx";
 import Experience from "./experience.tsx";
 import Home from "./home.tsx";
 import { useTheme } from "./ldtheme.tsx";
