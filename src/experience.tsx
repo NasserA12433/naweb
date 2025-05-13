@@ -26,7 +26,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 		animate={{ opacity: 1 }}
 		transition={{ duration: .5 }}
 		>
-			<div className="job-panel">
+			<div className="job-panel">		
 				<div className="job-logo-wrapper">
 					<img
 						src={logo}
@@ -132,18 +132,6 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 								"Reset and repaired computer batteries corrupt drive partitions, and did general maintenance on multiple private personal computers.",
 							]}
 
-						/>
-						<JobPanel
-							title="Project Manager"
-							company="Cal Poly Pomona"
-							logo="src\assets\housing.png"
-							skills={[" EC2 ", "JS", "SQL", "Flask"]}
-							description={[
-								"Manage and develop a housing finder application using AWS",
-								"Work with fellow students using the Agile development model to produce a product for use across the school",
-								"Guided my team in the development of web service endpoints, data storage development, and UI development, creating an application that shows the end user’s homes and rent data within a range of Cal Poly",
-
-							]}
 						/>
 						<JobPanel
 							title="Intern"

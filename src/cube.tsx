@@ -7,6 +7,13 @@ type CubeProps = {
   leftFaceContent?: React.ReactNode;
   topFaceContent?: React.ReactNode;
   bottomFaceContent?: React.ReactNode;
+
+  frontFaceLink?: string;
+  backFaceLink?: string;
+  rightFaceLink?: string;
+  leftFaceLink?: string;
+  topFaceLink?: string;
+  bottomFaceLink?: string;
 };
 
 function Cube({
@@ -16,16 +23,43 @@ function Cube({
   leftFaceContent,
   topFaceContent,
   bottomFaceContent,
+
+  frontFaceLink,
+  backFaceLink,
+  rightFaceLink,
+  leftFaceLink,
+  topFaceLink,
+  bottomFaceLink,
 }: CubeProps) {
+  const renderFace = (
+    content: React.ReactNode,
+    link: string | undefined,
+    className: string
+  ) => {
+    if (link) {
+      return (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`face ${className}`}
+        >
+          {content}
+        </a>
+      );
+    }
+    return <div className={`face ${className}`}>{content}</div>;
+  };
+
   return (
     <div className="cube-container">
       <div className="cube">
-        <div className="face front">{frontFaceContent}</div>
-        <div className="face back">{backFaceContent}</div>
-        <div className="face right">{rightFaceContent}</div>
-        <div className="face left">{leftFaceContent}</div>
-        <div className="face top">{topFaceContent}</div>
-        <div className="face bottom">{bottomFaceContent}</div>
+        {renderFace(frontFaceContent, frontFaceLink, 'front')}
+        {renderFace(backFaceContent, backFaceLink, 'back')}
+        {renderFace(rightFaceContent, rightFaceLink, 'right')}
+        {renderFace(leftFaceContent, leftFaceLink, 'left')}
+        {renderFace(topFaceContent, topFaceLink, 'top')}
+        {renderFace(bottomFaceContent, bottomFaceLink, 'bottom')}
       </div>
     </div>
   );
