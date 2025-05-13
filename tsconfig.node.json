@@ -14,7 +14,7 @@
 
     /* Required for project references */
     "composite": true,
-    "noEmit": false,
+    "noEmit": true,  // <- changed this
 
     /* Linting */
     "strict": true,
