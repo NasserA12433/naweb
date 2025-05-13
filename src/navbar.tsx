@@ -1,6 +1,6 @@
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './cssFiles/navbar.css';
-import CurrentProjects from "./CurrentProjects";
+import CurrentProjects from "./currentprojects.tsx";
 import Experience from "./experience.tsx";
 import Home from "./home.tsx";
 import { useTheme } from "./ldtheme.tsx";
@@ -19,6 +19,9 @@ function Navbar() {
         </nav>
 
         <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/experiences" element={<Experience />} />
         <Route path="/" element={<Home/>} />
         <Route path="/experiences" element={<Experience/>} />
         <Route path="/projects" element={<CurrentProjects/>} />
