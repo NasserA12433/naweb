@@ -1,4 +1,4 @@
-import './cssFiles/Cube.css';
+import './cssFiles/cube.css';
 
 type CubeProps = {
   frontFaceContent?: React.ReactNode;
