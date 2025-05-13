@@ -4,15 +4,6 @@ import './cssFiles/cube.css';
 import Cube from './cube.tsx';
 
 
-interface ProjectPanelProps {
-	title:string;
-	cube:string;
-	description:string[];
-	images?:string[];
-	cubeElement?: React.ReactNode;
-
-}
-
 
 const CurrentProjects = () =>{
 		return (
