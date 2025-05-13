@@ -19,9 +19,9 @@ function Navbar() {
         </nav>
 
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/experiences" element={<Experience />} />
-        <Route path="/projects" element={<CurrentProjects />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/experiences" element={<Experience/>} />
+        <Route path="/projects" element={<CurrentProjects/>} />
         </Routes>
     </Router>
     );
