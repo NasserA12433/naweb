@@ -15,6 +15,7 @@
     transform-style: preserve-3d;
     transition: transform 1s;
     align-items: center;
+    padding: 4px;
     transform: rotateX(0deg) rotateY(-30deg);
    }
    
@@ -29,6 +30,7 @@
     line-height: 100px;
     opacity: 1;
     backface-visibility: hidden;
+
    }
    
    .front { transform: translateZ(50px); }
@@ -37,3 +39,6 @@
    .left { transform: rotateY(-90deg) translateZ(50px); }
    .top { transform: rotateX(90deg) translateZ(50px); }
    .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+
+   
