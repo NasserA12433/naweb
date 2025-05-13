@@ -5,8 +5,6 @@ import Cube from './cube.tsx';
 
 
 
-
-
 const CurrentProjects = () =>{
 		return (
 			<motion.div
