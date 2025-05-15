@@ -106,7 +106,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="Software Developer"
 							company="BILLEE Rover"
-							logo="assets\Billiee.png"
+							logo="assets/Billiee.png"
 							skills={[" ROS2", "Linux", "3D data Clustering"]}
 							description={[
 								"Utilized ROS2 and NAV2 to deploy self-driving code on a robotic unit",
