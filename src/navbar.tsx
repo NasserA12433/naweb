@@ -14,7 +14,7 @@ function Navbar() {
         <Link to="/experiences" className="nav-button">Experiences</Link>
         <Link to="/projects" className="nav-button">Projects</Link>
         <button onClick={toggleTheme} className="ldmode">
-            <img src="src\assets\ldicon.png" className="lightdark-logo"/>
+            <img src="assets\ldicon.png" className="lightdark-logo"/>
         </button>
         </nav>
 
