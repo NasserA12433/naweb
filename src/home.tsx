@@ -47,7 +47,7 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						<button className="onhover-button">
-							{isLightMode? <img src="src\assets\ghd.jpg" className="assetbutton-logo"/>:<img src="src\assets\ghl.jpg" className="assetbutton-logo"/> }
+							{isLightMode? <img src="assets\ghd.jpg" className="assetbutton-logo"/>:<img src="assets\ghl.jpg" className="assetbutton-logo"/> }
 							<span className="tooltip">
 								Github
 							</span>
@@ -58,7 +58,7 @@ function Home() {
 						target="_blank"
 						rel="noopener noreferrer">
 						<button className="onhover-button">
-							{isLightMode? <img src="src\assets\LL2.png" className="assetbutton-logo"/>:<img src="src\assets\LD.png" className="assetbutton-logo"/> }
+							{isLightMode? <img src="assets\LL2.png" className="assetbutton-logo"/>:<img src="assets\LD.png" className="assetbutton-logo"/> }
 							<span className="tooltip">
 								linkedin
 							</span>
