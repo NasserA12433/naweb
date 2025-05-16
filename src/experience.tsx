@@ -124,7 +124,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="IT Technician"
 							company="Self Employed"
-							logo="assets\wag.gif"
+							logo="assets/wag.gif"
 							skills={[" BIOS", "Hardware Replacement", "Buisness Managment"]}
 							description={[
 								"Worked for commission repairing multiple computer errors and user problems",
@@ -136,7 +136,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="Intern"
 							company="OrangeGrid"
-							logo="assets\ogrid.png"
+							logo="assets/ogrid.png"
 							skills={[" Server Hardware ", "C#"]}
 							description={[
 								"Worked directly under the CIO to research servers for professional deployment",
