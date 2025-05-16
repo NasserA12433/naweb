@@ -15,7 +15,7 @@ function Home() {
 						transition={{ duration: 1 }}
 				>
 		<div className="profile-photo">
-			<img src="src\assets\Profile.png"/>
+			<img src="assets/Profile.png"/>
 		</div>
 		<div className="home-container">
 			<h1>
@@ -32,7 +32,7 @@ function Home() {
 
 			<div className="button-container">
 					<a
-						href="src\assets\ResumeNasserAlnabulsi.pdf"
+						href="assets/ResumeNasserAlnabulsi.pdf"
 						download="Nasser_Alnabulsi_Resume.pdf">
 						<button className="onhover-button">
 						<FontAwesomeIcon icon={faFile} size="2x" color="icon"/>
