@@ -91,7 +91,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="Student Professional Worker"
 							company="Los Angeles Department Of Water And Power"
-							logo="assets\DWP.jpg"
+							logo="/assets/DWP.jpg"
 							skills={[" Svelte", "Microsoft AD", "Python", "Flask"]}
 							description={[
 								"Developed cloud web applications to optimize office workflow (Full stack) ",
@@ -106,7 +106,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="Software Developer"
 							company="BILLEE Rover"
-							logo="assets/Billiee.png"
+							logo="/assets/Billiee.png"
 							skills={[" ROS2", "Linux", "3D data Clustering"]}
 							description={[
 								"Utilized ROS2 and NAV2 to deploy self-driving code on a robotic unit",
@@ -124,7 +124,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="IT Technician"
 							company="Self Employed"
-							logo="assets\wag.gif"
+							logo="assets/wag.gif"
 							skills={[" BIOS", "Hardware Replacement", "Buisness Managment"]}
 							description={[
 								"Worked for commission repairing multiple computer errors and user problems",
@@ -136,7 +136,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 						<JobPanel
 							title="Intern"
 							company="OrangeGrid"
-							logo="assets\ogrid.png"
+							logo="assets/ogrid.png"
 							skills={[" Server Hardware ", "C#"]}
 							description={[
 								"Worked directly under the CIO to research servers for professional deployment",
