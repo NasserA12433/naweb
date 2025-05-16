@@ -32,13 +32,13 @@ const CurrentProjects = () =>{
 					<p>Created an application on IOS and Android called Gamerstride. </p>
 					<p>Click the link to go to github</p>
 					</div>
-				<h1>Utility Billing Application</h1>
+				<h1>First ever personal site</h1>
 				<div style= {{display:'flex', alignItems:'center',gap:'2rem'}}>
-					<Cube frontFaceContent="Flask" rightFaceContent="Python"
-								leftFaceContent="Python" backFaceContent="Flask"
-								frontFaceLink='https://github.com/CS3650-03-3/UML-Classes-'/>
+					<Cube frontFaceContent="CSS" rightFaceContent="HTML"
+								leftFaceContent="Markup" backFaceContent=" "
+								frontFaceLink='https://github.com/NasserA12433/Personal-Website?tab=readme-ov-file'/>
 					<p> </p>
-					<p>Cal Poly Pomona Ultility Billing Fullstack Application.</p>
+					<p>My first personal website. I designed it without a frameowrk</p>
 					<p>Click the link to go to github</p>
 					</div>
 				<h1>CPP Hackathon Store website</h1>
