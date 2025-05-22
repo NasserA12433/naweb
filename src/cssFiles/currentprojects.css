@@ -1,6 +1,7 @@
 .cpc {
 	margin-top: 300px;
 	font-size: medium;
+	background-color: var(--bg-color);
 }
 
 .reset{
