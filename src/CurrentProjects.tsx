@@ -13,7 +13,7 @@ const CurrentProjects = () =>{
 			animate={{ opacity: 1 }}
 			transition={{ duration: .75}}
 			>
-			
+
 			<div className="cpc">
 				<div className='project-header'>
 					<h1>My Personal Website</h1>
