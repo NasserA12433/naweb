@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<ThemeProvider>
 			<title>Nasser Alnabulsi</title>
-			<link rel="icon" type="image/jpg" href="public\assets\favicon_c2.jpg"/>
+			<link rel="icon" type="image/jpg" href="assets/favicon_c2.jpg"/>
 			<Navbar />
 		</ThemeProvider>
 	</StrictMode>,
