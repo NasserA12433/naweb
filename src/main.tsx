@@ -7,6 +7,7 @@ import Navbar from './navbar.tsx';
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<ThemeProvider>
+			<link rel="icon" type="image/jpg" href="src\assets\favicon_c2.jpg"/>
 			<Navbar />
 		</ThemeProvider>
 	</StrictMode>,

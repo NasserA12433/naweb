@@ -1,7 +1,10 @@
 .cpc {
+	padding-top: 400px;
 	margin-top: 300px;
 	font-size: medium;
 	background-color: var(--bg-color);
+	width:87%;
+	max-width: fit-content;
 }
 
 .reset{
@@ -11,16 +14,34 @@
 		padding-top: 400px;
 }
 
+
+.reset-button{
+	color:var(--text-color);
+	background-color: var(--bg-color);
+	height: fit-content;
+	width: fit-content;
+	border-radius: 1rem;
+
+}
+
 @media (max-width: 768px) {
 	.reset{
 		color:var(--text-color);
 		background-color: var(--bg-color);
 		position: center;
 		padding-top: 400px;
-}
+	}
+
+	.reset-button{
+		color:var(--text-color);
+		background-color: var(--bg-color);
+		height: fit-content;
+		width: fit-content;
+
+	}
 
 	.cpc{
-		margin-top: 1500px;
+		padding-top: 1350px;
 		align-items: center;
 		font-size: small;
 		
