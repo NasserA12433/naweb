@@ -1,5 +1,14 @@
-import React, { useRef, useState } from 'react';
+import React, {
+  forwardRef,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from 'react';
 import './cssFiles/cube.css';
+
+export type CubeHandle = {
+  resetRotation: () => void;
+};
 
 type CubeProps = {
   frontFaceContent?: React.ReactNode;
@@ -17,24 +26,27 @@ type CubeProps = {
   bottomFaceLink?: string;
 };
 
-function Cube({
+const Cube = forwardRef<CubeHandle, CubeProps>(({
   frontFaceContent,
   backFaceContent,
   rightFaceContent,
   leftFaceContent,
   topFaceContent,
   bottomFaceContent,
-
   frontFaceLink,
   backFaceLink,
   rightFaceLink,
   leftFaceLink,
   topFaceLink,
   bottomFaceLink,
-}: CubeProps) {
+}, ref) => {
   const [rotation, setRotation] = useState({ x: 0, y: -45 });
   const [isDragging, setIsDragging] = useState(false);
   const lastPos = useRef({ x: 0, y: 0 });
+
+  useImperativeHandle(ref, () => ({
+    resetRotation: () => setRotation({ x: 0, y: -45 }),
+  }));
 
   const handleStart = (x: number, y: number) => {
     setIsDragging(true);
@@ -58,17 +70,14 @@ function Cube({
     handleStart(e.clientX, e.clientY);
   const handleMouseMove = (e: React.MouseEvent) =>
     handleMove(e.clientX, e.clientY);
-
   const handleTouchStart = (e: React.TouchEvent) => {
     const touch = e.touches[0];
     handleStart(touch.clientX, touch.clientY);
   };
-
   const handleTouchMove = (e: React.TouchEvent) => {
     const touch = e.touches[0];
     handleMove(touch.clientX, touch.clientY);
   };
-
   const handleEnd = () => setIsDragging(false);
 
   const renderFace = (
@@ -118,6 +127,6 @@ function Cube({
       </div>
     </div>
   );
-}
+});
 
 export default Cube;

@@ -9,9 +9,8 @@
 
 .reset{
 		color:var(--text-color);
-		background-color: var(--bg-color);
 		position: center;
-		padding-top: 400px;
+		padding-top: 80px;
 }
 
 
@@ -27,16 +26,22 @@
 @media (max-width: 768px) {
 	.reset{
 		color:var(--text-color);
-		background-color: var(--bg-color);
 		position: center;
-		padding-top: 400px;
+		align-items: center;
+		width: 100px;
+		display: flex;
+		justify-content: center;
+
 	}
 
 	.reset-button{
 		color:var(--text-color);
-		background-color: var(--bg-color);
 		height: fit-content;
 		width: fit-content;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		place-items: center;
 
 	}
 
