@@ -1,3 +1,6 @@
+*{box-sizing: border-box;
+}
+
 .navbar {
     position:sticky;
     width:97%;
@@ -11,7 +14,7 @@
     padding: 10px;
     box-shadow: none;
     z-index: 9;
-    
+    margin: 0 auto;
 }
 
 .nav-button {
@@ -62,51 +65,52 @@
 }
 @media (max-width: 768px) {
 
-.nav-button {
-    padding: 5px 8px;
-    height: fit-content;
-    justify-content: center;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    box-shadow: none;
-    outline: none;
-    border: none;
-}
-.navbar {
-    position:sticky;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    background-color: var(--bg-color);
-    padding: 10px;
-    box-shadow: none;
-    z-index: 9;
-    width: 100%;
-    
-    
-}
+    .nav-button {
+        padding: 5px 8px;
+        height: fit-content;
+        justify-content: center;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+    .navbar {
+        position:sticky;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: var(--bg-color);
+        padding: 10px;
+        box-shadow: none;
+        z-index: 9;
+        width: 100%;
+        margin: 0 auto;
+        
+        
+    }
 
-.lightdark-logo {
-    box-shadow: none;
-    width: 8px; 
-    height: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-.ldmode{
-    padding: 5px 8px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-color: var(--bg-color);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    box-shadow: none;
-    outline: none;
-    border: none;
-}
+    .lightdark-logo {
+        box-shadow: none;
+        width: 8px; 
+        height: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .ldmode{
+        padding: 5px 8px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border-color: var(--bg-color);
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
 }

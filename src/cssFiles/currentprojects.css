@@ -31,6 +31,7 @@
 		width: 100px;
 		display: flex;
 		justify-content: center;
+		margin: 0 auto;
 
 	}
 
@@ -46,7 +47,7 @@
 	}
 
 	.cpc{
-		padding-top: 1350px;
+		padding-top: 1000px;
 		align-items: center;
 		font-size: small;
 		
