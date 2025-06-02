@@ -125,7 +125,7 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 							title="IT Technician"
 							company="Self Employed"
 							logo="assets/wag.gif"
-							skills={[" BIOS", "Hardware Replacement", "Buisness Managment"]}
+							skills={[" BIOS", "Hardware Replacement", "Business Management"]}
 							description={[
 								"Worked for commission repairing multiple computer errors and user problems",
 								"Managed and maintained personal devices for fellow students",
@@ -140,9 +140,9 @@ const JobPanel: React.FC<JobPanelProps> = ({ title, company, logo,skills, descri
 							skills={[" Server Hardware ", "C#"]}
 							description={[
 								"Worked directly under the CIO to research servers for professional deployment",
-								"Learn about software deployment in the workplace",
+								"Learned about software deployment in the workplace",
 								"Attend meetings with clients and further expand knowledge on c# and website code",
-								"Learn more about software in a professional setting",
+								"Learned more about software in a professional setting",
 
 							]}
 						/>
