@@ -5,7 +5,7 @@
 I chose to overhaul my old website written in just raw CSS HTML and Javascript.
 
 I decided that React and typescript was an excellent idea.
-A lot of factors influcenced my decision but I ultimatly wanted to do something mocdern and fresh.
+A lot of factors influcenced my decision but I ultimately wanted to do something mocdern and fresh.
 I am not an excellent web developer and designer but im happy with what this is.
 
 
