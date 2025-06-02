@@ -1,12 +1,30 @@
-import { faFile, faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faLocationPin, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import "./cssFiles/home.css";
 import { useTheme } from "./ldtheme.tsx";
 import Typewriter from "./typewriter.tsx";
 
 function Home() {
 	const {isLightMode} = useTheme();
+	const [copied, setCopied] = useState(false);
+
+	const handleCopyLink = async () => {
+		try {
+			await navigator.clipboard.writeText(window.location.href);
+			setCopied(true);
+		} catch (err) {
+			console.error("Failed to copy!", err);
+		}
+	};
+	useEffect(() => {
+		if (copied) {
+			const timer = setTimeout(() => setCopied(false), 2000);
+			return () => clearTimeout(timer);
+		}
+	}, [copied]);
+
 	return (
 			
 				<motion.div
@@ -14,6 +32,7 @@ function Home() {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 1 }}
 				>
+	
 		<div className="profile-photo">
 			<img src="assets/Profile.png"/>
 		</div>
@@ -64,6 +83,12 @@ function Home() {
 							</span>
 						</button>
 					</a>
+					
+						<button className="onhover-button" onClick={handleCopyLink}>
+							<FontAwesomeIcon icon={faShareNodes} size="2x" color="icon" />{" "}
+							<span className="tooltip">{copied ? "Link Copied!" : "Sharable Link!"}</span>
+						</button>
+
 
 			</div>
 
